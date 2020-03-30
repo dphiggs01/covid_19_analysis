@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coronavirus in the U.S.</title>
+
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->
+  <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <!-- Slick Carousel Theme -->
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+
+</head>
+
+<body class="body-wrapper">
+
+
+<nav class="navbar main-nav fixed-top navbar-expand-lg">
+  <div class="container">
+      <a class="navbar-brand" href="index"><img src="images/logo.jpg" alt="logo" height="30" width="30"></a>
+
+  </div>
+</nav>
+<!--=====================================
+=            Homepage                   =
+======================================-->
+
+<section id="home" style="padding: 80px 0 100px;" class="banner bg-1">
+	<div class="container">
+		<div class="row">
+			<div class=" align-self-center">
+				<!-- Contents -->
+				<div class="content-block" >
+            <div style="text-align: center;">
+              <h2 style="color: white; padding: 0px 0 0px;margin: 0px 0 10px;">An Analysis of Coronavirus in the U.S.:</h2>
+              <h3 style="font-size: 27px; color: white; margin: 0px 0 10px;">Latest Map and Case Count</h3>
+              <h4 style="font-size: 20px; color: white; margin: 0px 0 30px;">as of 03/28/2020</h4>
+            </div>
+                  More than 2,300 people with the coronavirus have now died in the United States, according to a
+                  New York Times database, a figure that has more than doubled since Thursday and continues to rise
+                  sharply as deaths are reported by the dozens or hundreds in New York, New Jersey, Louisiana, Michigan
+                  and elsewhere.
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!--====  End of Homepage Banner  ====-->
+
+
+{% block slide1 %}
+{% endblock %}
+
+{% block slide2 %}
+{% endblock %}
+
+{% block slide3 %}
+{% endblock %}
+
+{% block slide4 %}
+{% endblock %}
+
+{% block slide5 %}
+{% endblock %}
+
+
+
+<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mr-auto">
+          <div class="footer-logo">
+            <!-- Logo -->
+          </div>
+          <div class="copyright">
+            <p>@2020 D. Higgins</p>
+            <div>
+              Source: Data made available for download by <a href="https://github.com/nytimes/covid-19-data">
+              The New York Times on GitHub</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <!-- Social Icons -->
+
+          <!-- Footer Links -->
+
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+  <!-- JAVASCRIPTS -->
+
+  <script src="plugins/jquery/jquery.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+
+  <script>
+      $(document).ready( function () {
+         $('#distributors').DataTable.ext.pager.numbers_length = 3;
+         $('#distributors').DataTable({
+             "language": { "thousands": "," },
+             "order": [[ 1, "desc" ],[ 2, "desc" ]],
+             "columnDefs": [
+                            { className: "text-right", "targets": [1,2] }
+                          ]
+          });
+         $('#manufacturer').DataTable.ext.pager.numbers_length = 3;
+
+         $('#manufacturer').DataTable({
+           "order": [[ 2, "desc" ],[ 1, "desc" ]],
+           "columnDefs": [ { "targets": 1, "orderable": false},
+                           { "targets": 3, "orderable": false},
+                           { className: "text-right", "targets": [1,2,3,4] }]
+         });
+
+      } );
+  </script>
+</body>
+
+
+</html>
