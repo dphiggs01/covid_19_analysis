@@ -31,7 +31,7 @@
 <nav class="navbar main-nav fixed-top navbar-expand-lg">
   <div class="container">
       <a class="navbar-brand" href="index"><img src="images/logo.jpg" alt="logo" height="30" width="30"></a>
-
+      Last updated as of 03/28/2020
   </div>
 </nav>
 <!--=====================================
@@ -46,13 +46,12 @@
 				<div class="content-block" >
             <div style="text-align: center;">
               <h2 style="color: white; padding: 0px 0 0px;margin: 0px 0 10px;">An Analysis of Coronavirus in the U.S.:</h2>
-              <h3 style="font-size: 27px; color: white; margin: 0px 0 10px;">Latest Map and Case Count</h3>
-              <h4 style="font-size: 20px; color: white; margin: 0px 0 30px;">as of 03/28/2020</h4>
+              <h3 style="font-size: 27px; color: white; margin: 10px 0 30px;">Latest Map and Case Count</h3>
             </div>
-                  More than 2,300 people with the coronavirus have now died in the United States, according to a
+                  "More than 2,300 people with the coronavirus have now died in the United States, according to a
                   New York Times database, a figure that has more than doubled since Thursday and continues to rise
                   sharply as deaths are reported by the dozens or hundreds in New York, New Jersey, Louisiana, Michigan
-                  and elsewhere.
+                  and elsewhere." --NYTimes
 
 				</div>
 			</div>
@@ -134,13 +133,14 @@
                           ]
           });
          $('#manufacturer').DataTable.ext.pager.numbers_length = 3;
-
          $('#manufacturer').DataTable({
-           "order": [[ 2, "desc" ],[ 1, "desc" ]],
-           "columnDefs": [ { "targets": 1, "orderable": false},
-                           { "targets": 3, "orderable": false},
-                           { className: "text-right", "targets": [1,2,3,4] }]
-         });
+             "language": { "thousands": "," },
+             "order": [[ 1, "desc" ],[ 2, "desc" ]],
+             "columnDefs": [
+                            { className: "text-right", "targets": [1,2] }
+                          ]
+          });
+
 
       } );
   </script>
