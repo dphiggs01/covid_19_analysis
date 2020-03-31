@@ -1,7 +1,7 @@
 <section class="section section bg-2" id="slide3a">
     <div class="section-title">
 
-        <h2 style="text-align: left; padding-left: 100px; margin-left:100px;">Where cases have been reported:</h2>
+        <h2 style="text-align: center; padding-left: 100px; margin-left:100px;">Where cases have been reported</h2>
         <div>Click on states to get county level details.</div>
 	<div class="container">
 
@@ -43,6 +43,16 @@
         .county-boundary:hover, .state:hover {
             fill: orange;
         }
+
+        .d3-tip {
+          line-height: 1;
+          padding: 6px;
+          background: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          border-radius: 4px;
+          font-size: 12px;
+        }
+
     </style>
     <div class="viz"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
@@ -75,22 +85,42 @@
             .attr("class", "d3-tip")
             .offset([-2, 0])
             .html(function (d) {
-                county_id = d['id'];
+                map_id = d['id'];
                 properties = d['properties'];
-                console.log(properties['name']);
-                covid_data_for_county = covid_data_by_county[county_id];
-                tip_str="No data for "+properties['name'] + " county";
-                if (typeof(covid_data_for_county) !== "undefined"){
-                    deaths_count = covid_data_for_county[0];
-                    cases_count = covid_data_for_county[1];
-                    state = covid_data_for_county[2];
-                    county = covid_data_for_county[3];
-                    tip_str = "<div style='font-weight:bold'>Location: " + county + ", "+state+"<br/>Cases: " + cases_count+ ", Deaths: "+deaths_count+"</div>";
+                console.log('Len= '+map_id.length+' id='+map_id);
+                tip_str = "No data available";
+                if(map_id.length === 2){
+                    tip_str="No data for "+properties['name'];
+                    covid_data_for_state = covid_data_by_state[map_id];
+                    if (typeof(covid_data_for_state) !== "undefined"){
+                        deaths_count = numberWithCommas(covid_data_for_state[0]);
+                        cases_count = numberWithCommas(covid_data_for_state[1]);
+                        state1 = covid_data_for_state[2];
+                        tip_str = "<div style='font-weight:bold'>Location: " + state1+"<br/>Cases: " + cases_count+ "<br/>Deaths: "+deaths_count+"</div>";
+                    }
+                } else if (map_id.length === 5) {
+                    covid_data_for_county = covid_data_by_county[map_id];
+                    tip_str="No data for "+properties['name'] + " county";
+                    if (typeof(covid_data_for_county) !== "undefined"){
+                        deaths_count = numberWithCommas(covid_data_for_county[0]);
+                        cases_count = numberWithCommas(covid_data_for_county[1]);
+                        state1 = covid_data_for_county[2];
+                        county = covid_data_for_county[3];
+                        tip_str = "<div style='font-weight:bold'>Location: " + county + ", "+state1+"<br/>Cases: " + cases_count+ "<br/>Deaths: "+deaths_count+"</div>";
+                    }
                 }
                 return tip_str
             });
 
-        colorScheme = ['#f7fcfd','#e0ecf4','#bfd3e6','#9ebcda','#8c96c6','#8c6bb1','#88419d','#810f7c','#4d004b'];
+        colorScheme = ['#f7fcfd',
+            '#e0ecf4',
+            '#bfd3e6',
+            '#9ebcda',
+            '#8c96c6',
+            '#8c6bb1',
+            '#88419d',
+            '#810f7c',
+            '#4d004b'];
 
         svg.call(tool_tip);
 
@@ -101,10 +131,10 @@
         var promises = [
             d3.json("./data/counties-10m.json"),
             d3.csv("./data/covid_19_cases_by_county.csv", function (d) {
-                covid_data_by_county[d.fips] = [d['deaths'],d['cases'],d['state'],d['county']];
+                covid_data_by_county[d.fips] = [d['deaths'], d['cases'], d['state'], d['county']];
             }),
             d3.csv("./data/covid_19_cases_by_state.csv", function (d) {
-                covid_data_by_state[d.state_id] = [d['deaths'],d['cases'],d['state']];
+                covid_data_by_state[d.state_id] = [d['deaths'], d['cases'], d['state']];
             })
           ];
           Promise.all(promises).then(ready);
@@ -171,6 +201,8 @@
                 .selectAll("path")
                 .data(topojson.feature(us, us.objects.states).features)
                 .enter().append("path")
+                .on('mouseover', tool_tip.show)
+                .on('mouseout', tool_tip.hide)
                 .attr("d", path)
                 .attr("class", "state")
                 .attr("fill", function (d) {
@@ -245,6 +277,13 @@
                 .attr('transform', 'translate('+margin.left+','+margin.top+')');
 
         }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
     </script>
 </div>
+        <div>
+            <img height="65" width="500"src="../static/images/legend.png">
+        </div>
 </section>

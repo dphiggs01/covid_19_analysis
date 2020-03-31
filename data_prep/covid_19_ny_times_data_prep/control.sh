@@ -1,0 +1,2 @@
+python covid_19_cases_by_county.py
+python covid_19_cases_by_state.py
