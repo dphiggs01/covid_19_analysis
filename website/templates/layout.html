@@ -82,25 +82,16 @@
 <footer class="footer-main">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mr-auto">
-          <div class="footer-logo">
-            <!-- Logo -->
-          </div>
+
           <div class="copyright">
             <p>@2020 D. Higgins</p>
             <div>
               Source: Data made available for download by <a href="https://github.com/nytimes/covid-19-data">
               The New York Times on GitHub</a>
-
             </div>
           </div>
         </div>
-        <div class="col-lg-4 text-lg-right">
-          <!-- Social Icons -->
 
-          <!-- Footer Links -->
-
-        </div>
       </div>
     </div>
 </footer>
@@ -125,7 +116,11 @@
       $(document).ready( function () {
          $('#distributors').DataTable.ext.pager.numbers_length = 3;
          $('#distributors').DataTable({
-             "language": { "thousands": "," },
+             "pagingType": "simple",
+             "language": {
+                 "info": "Showing _START_ to _END_ of _TOTAL_",
+                 "thousands": ","
+             },
              "order": [[ 1, "desc" ],[ 2, "desc" ]],
              "columnDefs": [
                             { className: "text-right", "targets": [1,2] }
@@ -133,7 +128,11 @@
           });
          $('#manufacturer').DataTable.ext.pager.numbers_length = 3;
          $('#manufacturer').DataTable({
-             "language": { "thousands": "," },
+             "pagingType": "simple",
+             "language": {
+                 "info": "Showing _START_ to _END_ of _TOTAL_",
+                 "thousands": ","
+             },
              "order": [[ 1, "desc" ],[ 2, "desc" ]],
              "columnDefs": [
                             { className: "text-right", "targets": [1,2] }
