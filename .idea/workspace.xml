@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb1be342-69e0-4e04-85b2-ecb5a678f14b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/templates/date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/covid_19_analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covid_19_analysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/covid_19_cases_by_county.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/covid_19_cases_by_state.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/us-counties.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid-19-data/us-states.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_county.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_county.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_state.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_county.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_state.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/images/legend.png" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/images/legend.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/templates/covid19_state_county_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/covid19_state_county_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/covid19_state_county_zoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/covid19_state_county_zoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/covid19_state_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/covid19_state_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +182,7 @@
       <updated>1585504352517</updated>
       <workItem from="1585570744366" duration="1147000" />
       <workItem from="1585572601625" duration="4347000" />
-      <workItem from="1585615228789" duration="7690000" />
+      <workItem from="1585615228789" duration="8591000" />
     </task>
     <servers />
   </component>
