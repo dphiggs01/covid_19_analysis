@@ -9,11 +9,16 @@ if [ -d "/home/ubuntu/Applications/python_envs" ]; then
     PORT=80
 fi
 
+
 exec gunicorn covid19_app:app \
 --workers $NUM_WORKERS \
 --worker-class gevent \
 --timeout $TIMEOUT \
 --log-level=debug \
+--reload-extra-file ./templates/index.html \
 --reload-extra-file ./templates/date.html \
+--reload-extra-file ./templates/covid19_state_county_zoom.html \
+--reload-extra-file ./templates/covid19_state_table.html \
+--reload-extra-file ./templates/covid19_state_county_table.html \
 --bind=0.0.0.0:$PORT \
 --pid=$PIDFILE

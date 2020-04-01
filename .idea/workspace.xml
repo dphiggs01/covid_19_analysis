@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fb1be342-69e0-4e04-85b2-ecb5a678f14b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/website/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_county.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_county.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_state.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_state.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/date.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/date.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +188,7 @@
       <workItem from="1585572601625" duration="4347000" />
       <workItem from="1585615228789" duration="11489000" />
       <workItem from="1585742701982" duration="324000" />
-      <workItem from="1585743040958" duration="3101000" />
+      <workItem from="1585743040958" duration="7795000" />
     </task>
     <servers />
   </component>

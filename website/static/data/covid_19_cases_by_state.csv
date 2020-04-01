@@ -1,56 +1,56 @@
-state,deaths,cases,state_id
-Alabama,5,830,01
-Alaska,2,114,02
-Arizona,13,930,04
-Arkansas,9,505,05
-California,132,6323,06
-Colorado,46,2315,08
-Connecticut,34,1993,09
-Delaware,6,232,10
-District of Columbia,4,342,11
-Florida,60,4944,12
-Georgia,83,2687,13
-Guam,1,58,
-Hawaii,0,173,15
-Idaho,6,310,16
-Illinois,71,4673,17
-Indiana,32,1514,18
-Iowa,4,336,19
-Kansas,7,333,20
-Kentucky,9,443,21
-Louisiana,153,3544,22
-Maine,3,253,23
-Maryland,11,1244,24
-Massachusetts,48,4955,25
-Michigan,132,5473,26
-Minnesota,9,505,27
-Mississippi,14,759,28
-Missouri,12,905,29
-Montana,1,161,30
-Nebraska,2,141,31
-Nevada,15,920,32
-New Hampshire,3,258,33
-New Jersey,161,13386,34
-New Mexico,2,237,35
-New York,897,59568,36
-North Carolina,6,1169,37
-North Dakota,1,98,38
-Northern Mariana Islands,0,2,
-Ohio,30,1665,39
-Oklahoma,16,429,40
-Oregon,13,549,41
-Pennsylvania,40,3441,42
-Puerto Rico,5,127,
-Rhode Island,3,331,44
-South Carolina,16,775,45
-South Dakota,1,90,46
-Tennessee,7,1570,47
-Texas,36,2719,48
-Utah,2,719,49
-Vermont,12,251,50
-Virgin Islands,0,23,
-Virginia,11,890,51
-Washington,209,4634,53
-West Virginia,1,124,54
-Wisconsin,17,1120,55
-Wyoming,0,88,56
+state,cases,deaths,state_id
+Alabama,947,11,01
+Alaska,120,2,02
+Arizona,1169,14,04
+Arkansas,567,11,05
+California,7423,147,06
+Colorado,2656,50,08
+Connecticut,2571,36,09
+Delaware,264,7,10
+District of Columbia,495,9,11
+Florida,5696,72,12
+Georgia,3032,105,13
+Guam,60,1,
+Hawaii,199,0,15
+Idaho,415,7,16
+Illinois,5125,84,17
+Indiana,1788,35,18
+Iowa,424,6,19
+Kansas,374,9,20
+Kentucky,484,11,21
+Louisiana,4025,187,22
+Maine,275,4,23
+Maryland,1415,15,24
+Massachusetts,5752,61,25
+Michigan,6509,197,26
+Minnesota,577,10,27
+Mississippi,848,16,28
+Missouri,1051,13,29
+Montana,177,4,30
+Nebraska,185,3,31
+Nevada,1044,18,32
+New Hampshire,314,3,33
+New Jersey,16636,206,34
+New Mexico,282,4,35
+New York,70000,1062,36
+North Carolina,1305,6,37
+North Dakota,110,3,38
+Northern Mariana Islands,2,0,
+Ohio,1933,40,39
+Oklahoma,481,17,40
+Oregon,607,16,41
+Pennsylvania,4156,48,42
+Puerto Rico,174,6,
+Rhode Island,415,4,44
+South Carolina,925,18,45
+South Dakota,102,1,46
+Tennessee,1729,13,47
+Texas,3046,47,48
+Utah,806,4,49
+Vermont,277,12,50
+Virgin Islands,30,0,
+Virginia,1021,12,51
+Washington,4932,221,53
+West Virginia,145,1,54
+Wisconsin,1269,20,55
+Wyoming,96,0,56
