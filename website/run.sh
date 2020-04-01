@@ -14,5 +14,6 @@ exec gunicorn covid19_app:app \
 --worker-class gevent \
 --timeout $TIMEOUT \
 --log-level=debug \
+--reload-extra-file ./templates/date.html \
 --bind=0.0.0.0:$PORT \
 --pid=$PIDFILE
