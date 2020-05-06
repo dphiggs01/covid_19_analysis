@@ -18,7 +18,7 @@ def check_nytimes_data():
     g = git.cmd.Git(prj_base+"/covid-19-data")
     ret_val = g.pull()
     print("message = {}".format(ret_val))
-    if ret_val != "Already up to date.":
+    if ret_val == "Already up to date.":
         print("do nothing")
     else:
         print("process data")
