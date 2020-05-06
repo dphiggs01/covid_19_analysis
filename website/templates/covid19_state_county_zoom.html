@@ -3,6 +3,7 @@
 
         <h2 style="text-align: center; padding-left: 100px; margin-left:100px;">Where cases have been reported</h2>
         <div>Click on states to get county level details.</div>
+    </div>
 	<div class="container">
 
     <style>
@@ -156,11 +157,11 @@
             us = promise_data[0];
 
             mapScaleState = d3.scaleLog()
-                .domain([1, 50000])
+                .domain([10, 300000])
                 .range([0, 8]);
 
             mapScaleCounty = d3.scaleLog()
-                .domain([1, 4000])
+                .domain([1, 6000])
                 .range([0, 8]);
 
             g.append("g")

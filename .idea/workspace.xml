@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb1be342-69e0-4e04-85b2-ecb5a678f14b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/redis/run-redis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/data_prep/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/data_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/github_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covid_19_analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covid_19_analysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/website/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/control.sh" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/control.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_county.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_county.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_state.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/covid_19_cases_by_state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/data/counties-10m.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/data/counties-10m.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/data/counties-10m.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/data/counties-10m.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/data/state_codes_by_name.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/data/state_codes_by_name.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/data/states-10m.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/data/states-10m.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep/topojson/topojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/data_prep/topojson/topojson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/covid19_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/covid19_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_county.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_county.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_state.csv" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/data/covid_19_cases_by_state.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/images/legend.png" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/images/legend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/covid19_state_county_zoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/covid19_state_county_zoom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/templates/date.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/date.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +101,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/website" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -95,19 +112,20 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website/static/images" />
+      <recent name="$PROJECT_DIR$/website" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/website/templates" />
       <recent name="$PROJECT_DIR$/website/static/data" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/website_widgets/state_county_zoom/data" />
-      <recent name="$PROJECT_DIR$/website_widgets/pills_per_person_average_2006_2012/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.covid_19_cases_by_county">
+  <component name="RunManager" selected="Python.data_check">
     <configuration name="covid19_state_county_zoom.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/covid_19_analysis/website_widgets/state_county_zoom/covid19_state_county_zoom.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="gtwr_by_county.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/covid_19_analysis/website_widgets/analysis_by_county/gtwr_by_county.html">
       <method v="2" />
     </configuration>
     <configuration name="pills_by_county.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/covid_19_analysis/website_widgets/pills_by_county/pills_by_county.html">
@@ -157,20 +175,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="data_check" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="covid_19_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep/data_check.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.pills_by_county.html" />
-      <item itemvalue="JavaScript Debug.gtwr_by_county.html" />
       <item itemvalue="JavaScript Debug.covid19_state_county_zoom.html" />
       <item itemvalue="Python.covid_19_cases_by_state" />
       <item itemvalue="Python.covid_19_cases_by_county" />
+      <item itemvalue="Python.data_check" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_check" />
         <item itemvalue="Python.covid_19_cases_by_county" />
         <item itemvalue="Python.covid_19_cases_by_state" />
         <item itemvalue="JavaScript Debug.covid19_state_county_zoom.html" />
         <item itemvalue="JavaScript Debug.pills_by_county.html" />
-        <item itemvalue="JavaScript Debug.gtwr_by_county.html" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +228,9 @@
       <workItem from="1585572601625" duration="4347000" />
       <workItem from="1585615228789" duration="11489000" />
       <workItem from="1585742701982" duration="324000" />
-      <workItem from="1585743040958" duration="7795000" />
+      <workItem from="1585743040958" duration="8606000" />
+      <workItem from="1588718090888" duration="3202000" />
+      <workItem from="1588768086720" duration="8720000" />
     </task>
     <servers />
   </component>
@@ -209,36 +251,37 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="408" y="177" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.835@0.23.1440.835" timestamp="1585572556610" />
-    <state width="1280" height="155" key="GridCell.Tab.0.bottom" timestamp="1585664613039">
+    <state width="1190" height="155" key="GridCell.Tab.0.bottom" timestamp="1588776243612">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state width="1280" height="155" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1585664613039" />
-    <state width="1280" height="155" key="GridCell.Tab.0.center" timestamp="1585664613038">
+    <state width="1190" height="155" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1588776243612" />
+    <state width="1190" height="155" key="GridCell.Tab.0.center" timestamp="1588776243611">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state width="1280" height="155" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1585664613038" />
-    <state width="1280" height="155" key="GridCell.Tab.0.left" timestamp="1585664613038">
+    <state width="1190" height="155" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1588776243611" />
+    <state width="1190" height="155" key="GridCell.Tab.0.left" timestamp="1588776243610">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state width="1280" height="155" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1585664613038" />
-    <state width="1280" height="155" key="GridCell.Tab.0.right" timestamp="1585664613038">
+    <state width="1190" height="155" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1588776243610" />
+    <state width="1190" height="155" key="GridCell.Tab.0.right" timestamp="1588776243612">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state width="1280" height="155" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1585664613038" />
+    <state width="1190" height="155" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1588776243612" />
     <state x="308" y="184" key="IDE.errors.dialog" timestamp="1585572576159">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="308" y="184" key="IDE.errors.dialog/0.23.1440.835@0.23.1440.835" timestamp="1585572576159" />
-    <state x="182" y="79" key="SettingsEditor" timestamp="1585615957945">
+    <state x="182" y="79" key="SettingsEditor" timestamp="1588771601277">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state x="182" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1585615957945" />
+    <state x="182" y="79" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1588771601277" />
     <state x="336" y="204" width="689" height="472" key="find.popup" timestamp="1585578708701">
       <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="336" y="204" width="689" height="472" key="find.popup/0.23.1440.836@0.23.1440.836" timestamp="1585578708701" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/covid_19_analysis$data_check.coverage" NAME="data_check Coverage Results" MODIFIED="1588776243604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/website/data_prep/covid_19_ny_times_data_prep" />
     <SUITE FILE_PATH="coverage/covid_19_analysis$covid_19_cases_by_county.coverage" NAME="covid_19_cases_by_county Coverage Results" MODIFIED="1585617558469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep" />
     <SUITE FILE_PATH="coverage/covid_19_analysis$covid_19_cases_by_state.coverage" NAME="covid_19_cases_by_state Coverage Results" MODIFIED="1585616510888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_prep/covid_19_ny_times_data_prep" />
   </component>

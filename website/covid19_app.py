@@ -1,6 +1,7 @@
 from flask import Flask, request, session, redirect, url_for, render_template, flash
 import csv
-
+from celery import Celery
+import celeryconfig
 from datetime import datetime
 import logging
 
@@ -9,6 +10,10 @@ logger.setLevel(logging.WARN)
 
 app = Flask(__name__)  # create the application instance :)
 app.config.from_object(__name__)  # load config from this file , flaskr.py
+
+# Celery configuration
+app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
+app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
 
 
 @app.context_processor
@@ -58,6 +63,36 @@ app.config.update(dict(
     SECRET_KEY='development key',
     WTF_CSRF_ENABLED=True,
 ))
+
+# =============================================================================== #
+# Code for Batch processing
+# celery worker -A covid19_app.celery --loglevel=INFO
+# celery beat -A covid19_app.celery --schedule=/tmp/celerybeat-schedule --loglevel=INFO --pidfile=/tmp/celerybeat.pid
+
+def make_celery(app):
+    # create context tasks in celery
+    celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL']
+    )
+
+
+    celery.conf.update(app.config)
+
+    celery.config_from_object(celeryconfig)
+    TaskBase = celery.Task
+
+    class ContextTask(TaskBase):
+        abstract = True
+
+        def __call__(self, *args, **kwargs):
+            with app.app_context():
+                return TaskBase.__call__(self, *args, **kwargs)
+
+
+    celery.Task = ContextTask
+
+    return celery
+
+celery = make_celery(app)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=9000)
